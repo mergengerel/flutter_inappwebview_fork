@@ -1,6 +1,6 @@
 //
 //  Options.swift
-//  flutter_inappwebview_fork
+//  flutter_inappwebview
 //
 //  Created by Lorenzo on 26/09/18.
 //
@@ -16,7 +16,7 @@ public class Options<T>: NSObject {
     
     func parse(options: [String: Any?]) -> Options {
         for (key, value) in options {
-            if self.responds(to: Selector(key)) {
+            if value != nil, !(value is NSNull), self.responds(to: Selector(key)) {
                 self.setValue(value, forKey: key)
             }
         }

@@ -1,6 +1,6 @@
 //
 //  InAppWebViewStatic.swift
-//  flutter_inappwebview_fork
+//  flutter_inappwebview
 //
 //  Created by Lorenzo Pichilli on 08/12/2019.
 //
@@ -21,17 +21,26 @@ class InAppWebViewStatic: NSObject, FlutterPlugin {
     init(registrar: FlutterPluginRegistrar) {
         super.init()
         InAppWebViewStatic.registrar = registrar
-        InAppWebViewStatic.channel = FlutterMethodChannel(name: "com.pichillilorenzo/flutter_inappwebview_fork_static", binaryMessenger: registrar.messenger())
+        InAppWebViewStatic.channel = FlutterMethodChannel(name: "com.pichillilorenzo/flutter_inappwebview_static", binaryMessenger: registrar.messenger())
         registrar.addMethodCallDelegate(self, channel: InAppWebViewStatic.channel!)
     }
     
     public func handle(_ call: FlutterMethodCall, result: @escaping FlutterResult) {
-        //let arguments = call.arguments as? NSDictionary
+        let arguments = call.arguments as? NSDictionary
+        
         switch call.method {
             case "getDefaultUserAgent":
                 InAppWebViewStatic.getDefaultUserAgent(completionHandler: { (value) in
                     result(value)
                 })
+                break
+            case "handlesURLScheme":
+                let urlScheme = arguments!["urlScheme"] as! String
+                if #available(iOS 11.0, *) {
+                    result(WKWebView.handlesURLScheme(urlScheme))
+                } else {
+                    result(false)
+                }
                 break
             default:
                 result(FlutterMethodNotImplemented)

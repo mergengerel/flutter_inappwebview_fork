@@ -1,6 +1,6 @@
-# flutter_inappwebview_fork_example
+# flutter_inappwebview_example
 
-Demonstrates how to use the flutter_inappwebview_fork plugin.
+Demonstrates how to use the flutter_inappwebview plugin.
 
 ## Getting Started
 

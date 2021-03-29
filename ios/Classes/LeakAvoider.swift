@@ -1,6 +1,6 @@
 //
 //  LeakAvoider.swift
-//  flutter_inappwebview_fork
+//  flutter_inappwebview
 //
 //  Created by Lorenzo Pichilli on 15/12/2019.
 //
@@ -11,8 +11,8 @@ public class LeakAvoider: NSObject {
     weak var delegate : FlutterMethodCallDelegate?
     
     init(delegate: FlutterMethodCallDelegate) {
-        self.delegate = delegate
         super.init()
+        self.delegate = delegate
     }
     
     public func handle(_ call: FlutterMethodCall, result: @escaping FlutterResult) {
