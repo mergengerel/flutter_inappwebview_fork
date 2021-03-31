@@ -1,20 +1,17 @@
-name: flutter_inappwebview
+name: flutter_inappwebview_fork
 description: A Flutter plugin that allows you to add an inline webview, to use an headless webview, and to open an in-app browser window.
-version: 5.3.0
-homepage: https://github.com/pichillilorenzo/flutter_inappwebview
+version: 7.0.1
+homepage: https://github.com/pichillilorenzo/flutter_inappwebview_fork
 
 environment:
-  sdk: ">=2.12.0-0 <3.0.0"
-  flutter: ">=1.22.2"
+  sdk: ">=2.7.0 <3.0.0"
+  flutter: ">=1.12.13+hotfix.5"
 
 dependencies:
   flutter:
     sdk: flutter
-
-dev_dependencies:
-  flutter_test:
-    sdk: flutter
-  pedantic: ^1.10.0-nullsafety.1
+  uuid: ^3.0.3
+  mime: ^1.0.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://www.dartlang.org/tools/pub/pubspec
@@ -24,14 +21,14 @@ flutter:
   plugin:
     platforms:
       android:
-        package: com.pichillilorenzo.flutter_inappwebview
+        package: com.pichillilorenzo.flutter_inappwebview_fork
         pluginClass: InAppWebViewFlutterPlugin
       ios:
         pluginClass: InAppWebViewFlutterPlugin
 
   assets:
-    - packages/flutter_inappwebview/t_rex_runner/t-rex.html
-    - packages/flutter_inappwebview/t_rex_runner/t-rex.css
+    - packages/flutter_inappwebview_fork/t_rex_runner/t-rex.html
+    - packages/flutter_inappwebview_fork/t_rex_runner/t-rex.css
   # To add assets to your plugin package, add an assets section, like this:
   # assets:
   #  - images/a_dot_burr.jpeg

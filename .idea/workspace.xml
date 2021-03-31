@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7daaf92e-b4cd-4b39-a5a4-ede36db86c4f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/.idea/caches/build_file_checksums.ser" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/.idea/caches/gradle_models.ser" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/android/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/proguard-rules.pro" beforeDir="false" afterPath="$PROJECT_DIR$/android/proguard-rules.pro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/pichillilorenzo/flutter_inappwebview/InAppWebViewFileProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/pichillilorenzo/flutter_inappwebview/InAppWebViewFlutterPlugin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/pichillilorenzo/flutter_inappwebview/InAppWebViewMethodHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/pichillilorenzo/flutter_inappwebview/InAppWebViewStatic.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/pichillilorenzo/flutter_inappwebview/JavaScriptBridgeInterface.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/pichillilorenzo/flutter_inappwebview/MyCookieManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/pichillilorenzo/flutter_inappwebview/MyWebStorage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/pichillilorenzo/flutter_inappwebview/Options.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/pichillilorenzo/flutter_inappwebview/PlatformUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/pichillilorenzo/flutter_inappwebview/RequestPermissionHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/pichillilorenzo/flutter_inappwebview/ServiceWorkerManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/pichillilorenzo/flutter_inappwebview/Util.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/pichillilorenzo/flutter_inappwebview/WebViewFeatureManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/pichillilorenzo/flutter_inappwebview/chrome_custom_tabs/ActionBroadcastReceiver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/pichillilorenzo/flutter_inappwebview/chrome_custom_tabs/ChromeCustomTabsActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/pichillilorenzo/flutter_inappwebview/chrome_custom_tabs/ChromeCustomTabsOptions.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/pichillilorenzo/flutter_inappwebview/chrome_custom_tabs/ChromeSafariBrowserManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/pichillilorenzo/flutter_inappwebview/chrome_custom_tabs/CustomTabActivityHelper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/pichillilorenzo/flutter_inappwebview/chrome_custom_tabs/CustomTabsHelper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/pichillilorenzo/flutter_inappwebview/chrome_custom_tabs/KeepAliveService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/pichillilorenzo/flutter_inappwebview/chrome_custom_tabs/ServiceConnection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/pichillilorenzo/flutter_inappwebview/chrome_custom_tabs/ServiceConnectionCallback.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/pichillilorenzo/flutter_inappwebview/content_blocker/ContentBlocker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/pichillilorenzo/flutter_inappwebview/content_blocker/ContentBlockerAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/pichillilorenzo/flutter_inappwebview/content_blocker/ContentBlockerActionType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/pichillilorenzo/flutter_inappwebview/content_blocker/ContentBlockerHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/pichillilorenzo/flutter_inappwebview/content_blocker/ContentBlockerTrigger.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/pichillilorenzo/flutter_inappwebview/content_blocker/ContentBlockerTriggerResourceType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/pichillilorenzo/flutter_inappwebview/credential_database/CredentialDatabase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/pichillilorenzo/flutter_inappwebview/credential_database/CredentialDatabaseHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/pichillilorenzo/flutter_inappwebview/credential_database/CredentialDatabaseHelper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/pichillilorenzo/flutter_inappwebview/credential_database/URLCredentialContract.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/pichillilorenzo/flutter_inappwebview/credential_database/URLCredentialDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/pichillilorenzo/flutter_inappwebview/credential_database/URLProtectionSpaceContract.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/pichillilorenzo/flutter_inappwebview/credential_database/URLProtectionSpaceDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/pichillilorenzo/flutter_inappwebview/headless_in_app_webview/HeadlessInAppWebView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/pichillilorenzo/flutter_inappwebview/headless_in_app_webview/HeadlessInAppWebViewManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/pichillilorenzo/flutter_inappwebview/in_app_browser/ActivityResultListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/pichillilorenzo/flutter_inappwebview/in_app_browser/InAppBrowserActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/pichillilorenzo/flutter_inappwebview/in_app_browser/InAppBrowserDelegate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/pichillilorenzo/flutter_inappwebview/in_app_browser/InAppBrowserManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/pichillilorenzo/flutter_inappwebview/in_app_browser/InAppBrowserOptions.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/pichillilorenzo/flutter_inappwebview/in_app_webview/ContextMenuOptions.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/pichillilorenzo/flutter_inappwebview/in_app_webview/DisplayListenerProxy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/pichillilorenzo/flutter_inappwebview/in_app_webview/FlutterWebView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/pichillilorenzo/flutter_inappwebview/in_app_webview/FlutterWebViewFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/pichillilorenzo/flutter_inappwebview/in_app_webview/InAppWebView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/pichillilorenzo/flutter_inappwebview/in_app_webview/InAppWebViewChromeClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/pichillilorenzo/flutter_inappwebview/in_app_webview/InAppWebViewClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/pichillilorenzo/flutter_inappwebview/in_app_webview/InAppWebViewOptions.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/pichillilorenzo/flutter_inappwebview/in_app_webview/InAppWebViewRenderProcessClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/pichillilorenzo/flutter_inappwebview/in_app_webview/InputAwareWebView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/pichillilorenzo/flutter_inappwebview/in_app_webview/ThreadedInputConnectionProxyAdapterView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/pichillilorenzo/flutter_inappwebview/plugin_scripts_js/ConsoleLogJS.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/pichillilorenzo/flutter_inappwebview/plugin_scripts_js/InterceptAjaxRequestJS.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/pichillilorenzo/flutter_inappwebview/plugin_scripts_js/InterceptFetchRequestJS.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/pichillilorenzo/flutter_inappwebview/plugin_scripts_js/JavaScriptBridgeJS.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/pichillilorenzo/flutter_inappwebview/plugin_scripts_js/OnLoadResourceJS.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/pichillilorenzo/flutter_inappwebview/plugin_scripts_js/OnWindowBlurEventJS.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/pichillilorenzo/flutter_inappwebview/plugin_scripts_js/OnWindowFocusEventJS.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/pichillilorenzo/flutter_inappwebview/plugin_scripts_js/PluginScriptsUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/pichillilorenzo/flutter_inappwebview/plugin_scripts_js/PrintJS.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/pichillilorenzo/flutter_inappwebview/plugin_scripts_js/PromisePolyfillJS.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/pichillilorenzo/flutter_inappwebview/pull_to_refresh/PullToRefreshLayout.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/pichillilorenzo/flutter_inappwebview/pull_to_refresh/PullToRefreshOptions.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/pichillilorenzo/flutter_inappwebview/types/ClientCertChallenge.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/pichillilorenzo/flutter_inappwebview/types/ContentWorld.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/pichillilorenzo/flutter_inappwebview/types/CreateWindowAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/pichillilorenzo/flutter_inappwebview/types/HttpAuthenticationChallenge.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/pichillilorenzo/flutter_inappwebview/types/NavigationAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/pichillilorenzo/flutter_inappwebview/types/NavigationActionPolicy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/pichillilorenzo/flutter_inappwebview/types/PluginScript.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/pichillilorenzo/flutter_inappwebview/types/PreferredContentModeOptionType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/pichillilorenzo/flutter_inappwebview/types/ServerTrustChallenge.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/pichillilorenzo/flutter_inappwebview/types/Size2D.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/pichillilorenzo/flutter_inappwebview/types/SslCertificateExt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/pichillilorenzo/flutter_inappwebview/types/SslErrorExt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/pichillilorenzo/flutter_inappwebview/types/URLAuthenticationChallenge.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/pichillilorenzo/flutter_inappwebview/types/URLCredential.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/pichillilorenzo/flutter_inappwebview/types/URLProtectionSpace.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/pichillilorenzo/flutter_inappwebview/types/URLRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/pichillilorenzo/flutter_inappwebview/types/UserContentController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/pichillilorenzo/flutter_inappwebview/types/UserScript.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/pichillilorenzo/flutter_inappwebview/types/UserScriptInjectionTime.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/pichillilorenzo/flutter_inappwebview/types/WebMessageChannel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/pichillilorenzo/flutter_inappwebview/types/WebMessageListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/res/layout/activity_web_view.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/res/layout/activity_web_view.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/res/menu/menu_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/res/menu/menu_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/example/.flutter-plugins-dependencies" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/example/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/android/app/src/main/java/com/pichillilorenzo/flutterwebviewexample/EmbedderV1Activity.java" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/app/src/main/java/com/pichillilorenzo/flutterwebviewexample/EmbedderV1Activity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/android/app/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/app/src/main/res/values/styles.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/android/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/assets/images/flutter-logo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/assets/images/flutter-logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/assets/sample_audio.ogg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/assets/sample_video.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/integration_test/.env.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/integration_test/webview_flutter_test.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Flutter/Debug.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Flutter/Debug.xcconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Flutter/Flutter.podspec" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Flutter/Flutter.podspec" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Flutter/Release.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Flutter/Release.xcconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Flutter/flutter_export_environment.sh" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Flutter/flutter_export_environment.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/project.xcworkspace/contents.xcworkspacedata" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/project.xcworkspace/contents.xcworkspacedata" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner/AppDelegate.swift" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Runner/AppDelegate.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Runner/Info.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/lib/chrome_safari_browser_example.screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/lib/chrome_safari_browser_example.screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/lib/headless_in_app_webview.screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/lib/headless_in_app_webview.screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/lib/in_app_browser_example.screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/lib/in_app_browser_example.screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/lib/in_app_webiew_example.screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/lib/in_app_webiew_example.screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/example/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/test_assets/css/blue-body.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/test_assets/images/flutter-logo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/test_assets/images/flutter-logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/test_assets/in_app_webview_initial_file_test.html" beforeDir="false" afterPath="$PROJECT_DIR$/example/test_assets/in_app_webview_initial_file_test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/test_assets/in_app_webview_javascript_handler_test.html" beforeDir="false" afterPath="$PROJECT_DIR$/example/test_assets/in_app_webview_javascript_handler_test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/test_assets/in_app_webview_on_js_dialog_test.html" beforeDir="false" afterPath="$PROJECT_DIR$/example/test_assets/in_app_webview_on_js_dialog_test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/test_assets/in_app_webview_on_load_resource_custom_scheme_test.html" beforeDir="false" afterPath="$PROJECT_DIR$/example/test_assets/in_app_webview_on_load_resource_custom_scheme_test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/test_assets/in_app_webview_on_load_resource_test.html" beforeDir="false" afterPath="$PROJECT_DIR$/example/test_assets/in_app_webview_on_load_resource_test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/test_assets/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/example/test_assets/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/test_assets/js/jquery-3.3.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/test_assets/sample_audio.ogg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/test_assets/sample_video.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/test_driver/integration_test.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter_inappwebview.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter_inappwebview_android.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/ContextMenuOptions.swift" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Classes/ContextMenuOptions.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/CredentialDatabase.swift" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Classes/CredentialDatabase.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/CustomeSchemeHandler.swift" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Classes/CustomeSchemeHandler.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/FlutterMethodCallDelegate.swift" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Classes/FlutterMethodCallDelegate.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/HeadlessInAppWebView/HeadlessInAppWebView.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/HeadlessInAppWebView/HeadlessInAppWebViewManager.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/HttpAuthenticationChallenge.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/InAppBrowser/InAppBrowserDelegate.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/InAppBrowser/InAppBrowserManager.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/InAppBrowser/InAppBrowserNavigationController.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/InAppBrowser/InAppBrowserOptions.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/InAppBrowser/InAppBrowserWebViewController.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/InAppWebView/FlutterWebViewController.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/InAppWebView/FlutterWebViewFactory.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/InAppWebView/InAppWebView.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/InAppWebView/InAppWebViewOptions.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/InAppWebViewFlutterPlugin.m" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Classes/InAppWebViewFlutterPlugin.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/InAppWebViewMethodHandler.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/InAppWebViewStatic.swift" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Classes/InAppWebViewStatic.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/LeakAvoider.swift" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Classes/LeakAvoider.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/MyCookieManager.swift" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Classes/MyCookieManager.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/MyWebStorageManager.swift" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Classes/MyWebStorageManager.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/Options.swift" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Classes/Options.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/PlatformUtil.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/PluginScriptsJS/CallAsyncJavaScriptBelowIOS14WrapperJS.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/PluginScriptsJS/ConsoleLogJS.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/PluginScriptsJS/EnableViewportScaleJS.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/PluginScriptsJS/FindElementsAtPointJS.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/PluginScriptsJS/FindTextHighlightJS.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/PluginScriptsJS/InterceptAjaxRequestJS.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/PluginScriptsJS/InterceptFetchRequestJS.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/PluginScriptsJS/JavaScriptBridgeJS.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/PluginScriptsJS/LastTouchedAnchorOrImageJS.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/PluginScriptsJS/OnLoadResourceJS.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/PluginScriptsJS/OnWindowBlurEventJS.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/PluginScriptsJS/OnWindowFocusEventJS.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/PluginScriptsJS/OriginalViewPortMetaTagContentJS.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/PluginScriptsJS/PluginScriptsUtil.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/PluginScriptsJS/PrintJS.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/PluginScriptsJS/PromisePolyfillJS.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/PluginScriptsJS/SupportZoomJS.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/PluginScriptsJS/WebMessageChannelJS.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/PluginScriptsJS/WebMessageListenerJS.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/PluginScriptsJS/WindowIdJS.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/PullToRefresh/PullToRefreshControl.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/PullToRefresh/PullToRefreshDelegate.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/PullToRefresh/PullToRefreshOptions.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/SafariViewController/ChromeSafariBrowserManager.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/SafariViewController/SafariBrowserOptions.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/SafariViewController/SafariViewController.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/SwiftFlutterPlugin.swift" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Classes/SwiftFlutterPlugin.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/Types/ClientCertChallenge.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/Types/HitTestResult.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/Types/NSAttributedString.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/Types/PluginScript.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/Types/SecCertificate.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/Types/ServerTrustChallenge.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/Types/Size2D.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/Types/SslCertificate.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/Types/SslError.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/Types/UIColor.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/Types/URLAuthenticationChallenge.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/Types/URLCredential.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/Types/URLProtectionSpace.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/Types/URLRequest.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/Types/URLResponse.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/Types/UserScript.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/Types/WKContentWorld.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/Types/WKFrameInfo.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/Types/WKNavigationAction.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/Types/WKNavigationResponse.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/Types/WKSecurityOrigin.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/Types/WKUserContentController.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/Types/WKWindowFeatures.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/Types/WebMessage.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/Types/WebMessageChannel.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/Types/WebMessageListener.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/Types/WebMessagePort.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/Types/WebViewTransport.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/Util.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/WKProcessPoolManager.swift" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Classes/WKProcessPoolManager.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Storyboards/WebView.storyboard" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Storyboards/WebView.storyboard" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/flutter_inappwebview.podspec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/flutter_inappwebview.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/android/main.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/android/service_worker_controller.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/android/webview_feature.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/chrome_safari_browser/android/chrome_custom_tabs_options.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/chrome_safari_browser/android/main.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/chrome_safari_browser/chrome_safari_browser.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/chrome_safari_browser/chrome_safari_browser_options.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/chrome_safari_browser/ios/main.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/chrome_safari_browser/ios/safari_options.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/chrome_safari_browser/main.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/content_blocker.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/content_blocker.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/context_menu.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/context_menu.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/cookie_manager.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/cookie_manager.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/http_auth_credentials_database.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/http_auth_credentials_database.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/in_app_browser/android/in_app_browser_options.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/in_app_browser/android/main.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/in_app_browser/in_app_browser.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/in_app_browser/in_app_browser_options.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/in_app_browser/ios/in_app_browser_options.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/in_app_browser/ios/main.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/in_app_browser/main.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/in_app_localhost_server.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/in_app_localhost_server.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/in_app_webview/_static_channel.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/in_app_webview/android/in_app_webview_controller.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/in_app_webview/android/in_app_webview_options.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/in_app_webview/android/main.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/in_app_webview/headless_in_app_webview.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/in_app_webview/in_app_webview.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/in_app_webview/in_app_webview_controller.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/in_app_webview/in_app_webview_options.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/in_app_webview/ios/in_app_webview_controller.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/in_app_webview/ios/in_app_webview_options.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/in_app_webview/ios/main.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/in_app_webview/main.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/in_app_webview/webview.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/ios/main.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/main.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/mime_type_resolver.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/platform_util.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/pull_to_refresh/main.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/pull_to_refresh/pull_to_refresh_controller.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/pull_to_refresh/pull_to_refresh_options.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/types.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/types.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/util.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/util.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/web_message/main.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/web_message/web_message_channel.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/web_message/web_message_listener.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/web_storage/_static_channel.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/web_storage/android/main.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/web_storage/android/web_storage_manager.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/web_storage/ios/main.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/web_storage/ios/web_storage_manager.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/web_storage/main.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/web_storage/web_storage.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/web_storage/web_storage_manager.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/x509_certificate/asn1_decoder.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/x509_certificate/asn1_der_encoder.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/x509_certificate/asn1_distinguished_names.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/x509_certificate/asn1_identifier.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/x509_certificate/asn1_object.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/x509_certificate/key_usage.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/x509_certificate/main.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/x509_certificate/oid.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/x509_certificate/x509_certificate.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/x509_certificate/x509_extension.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/x509_certificate/x509_public_key.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nodejs_server_test_auth_basic_and_ssl/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/nodejs_server_test_auth_basic_and_ssl/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nodejs_server_test_auth_basic_and_ssl/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/nodejs_server_test_auth_basic_and_ssl/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nodejs_server_test_auth_basic_and_ssl/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/nodejs_server_test_auth_basic_and_ssl/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/android-wait-for-emulator.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/publish.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/test.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/env.dart" beforeDir="false" afterPath="$PROJECT_DIR$/tool/env.dart" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1qWimoDgdKsIzH1ypztpHVkqQwv" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RunManager">
+    <configuration name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter">
+      <option name="filePath" value="$PROJECT_DIR$/example/lib/main.dart" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7daaf92e-b4cd-4b39-a5a4-ede36db86c4f" name="Default Changelist" comment="" />
+      <created>1617201911364</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1617201911364</updated>
+    </task>
+    <servers />
+  </component>
+</project>

@@ -1,6 +1,6 @@
 //
 //  FlutterMethodCallDelegate.swift
-//  flutter_inappwebview
+//  flutter_inappwebview_fork
 //
 //  Created by Lorenzo Pichilli on 15/12/2019.
 //
