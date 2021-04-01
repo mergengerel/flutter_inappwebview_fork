@@ -24,6 +24,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7daaf92e-b4cd-4b39-a5a4-ede36db86c4f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/pichillilorenzo/flutter_inappwebview_fork/InAppWebView/InAppWebViewChromeClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/pichillilorenzo/flutter_inappwebview_fork/InAppWebView/InAppWebViewChromeClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -77,9 +78,9 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="422" y="189" width="765" height="522" key="find.popup" timestamp="1617240220500">
+    <state x="422" y="189" width="765" height="522" key="find.popup" timestamp="1617245556597">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="422" y="189" width="765" height="522" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1617240220500" />
+    <state x="422" y="189" width="765" height="522" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1617245556597" />
   </component>
 </project>

@@ -801,7 +801,7 @@ public class InAppWebViewChromeClient extends WebChromeClient implements PluginR
 
   @Override
   public boolean onActivityResult(int requestCode, int resultCode, Intent data) {
-    if (InAppWebViewFlutterPlugin.filePathCallback == null && InAppWebViewFlutterPlugin.filePathCallbackLegacy == null) {
+    if (InAppWebViewFlutterPluginFork.filePathCallback == null && InAppWebViewFlutterPluginFork.filePathCallbackLegacy == null) {
       return true;
     }
 
