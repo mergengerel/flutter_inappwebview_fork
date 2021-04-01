@@ -22,9 +22,9 @@ flutter:
     platforms:
       android:
         package: com.pichillilorenzo.flutter_inappwebview_fork
-        pluginClass: InAppWebViewFlutterPlugin
+        pluginClass: InAppWebViewFlutterPluginFork
       ios:
-        pluginClass: InAppWebViewFlutterPlugin
+        pluginClass: InAppWebViewFlutterPluginFork
 
   assets:
     - packages/flutter_inappwebview_fork/t_rex_runner/t-rex.html

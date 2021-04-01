@@ -40,7 +40,7 @@ import androidx.core.content.ContextCompat;
 import androidx.core.content.FileProvider;
 
 import com.pichillilorenzo.flutter_inappwebview_fork.InAppBrowser.InAppBrowserActivity;
-import com.pichillilorenzo.flutter_inappwebview_fork.InAppWebViewFlutterPlugin;
+import com.pichillilorenzo.flutter_inappwebview_fork.InAppWebViewFlutterPluginFork;
 import com.pichillilorenzo.flutter_inappwebview_fork.R;
 import com.pichillilorenzo.flutter_inappwebview_fork.Shared;
 
@@ -811,26 +811,26 @@ public class InAppWebViewChromeClient extends WebChromeClient implements PluginR
     switch (requestCode) {
       case PICKER:
         if (resultCode != RESULT_OK) {
-          if (InAppWebViewFlutterPlugin.filePathCallback != null) {
-            InAppWebViewFlutterPlugin.filePathCallback.onReceiveValue(null);
+          if (InAppWebViewFlutterPluginFork.filePathCallback != null) {
+            InAppWebViewFlutterPluginFork.filePathCallback.onReceiveValue(null);
           }
         } else {
           Uri result[] = this.getSelectedFiles(data, resultCode);
           if (result != null) {
-            InAppWebViewFlutterPlugin.filePathCallback.onReceiveValue(result);
+            InAppWebViewFlutterPluginFork.filePathCallback.onReceiveValue(result);
           } else {
-            InAppWebViewFlutterPlugin.filePathCallback.onReceiveValue(new Uri[]{outputFileUri});
+            InAppWebViewFlutterPluginFork.filePathCallback.onReceiveValue(new Uri[]{outputFileUri});
           }
         }
         break;
       case PICKER_LEGACY:
         Uri result = resultCode != Activity.RESULT_OK ? null : data == null ? outputFileUri : data.getData();
-        InAppWebViewFlutterPlugin.filePathCallbackLegacy.onReceiveValue(result);
+        InAppWebViewFlutterPluginFork.filePathCallbackLegacy.onReceiveValue(result);
         break;
 
     }
-    InAppWebViewFlutterPlugin.filePathCallback = null;
-    InAppWebViewFlutterPlugin.filePathCallbackLegacy = null;
+    InAppWebViewFlutterPluginFork.filePathCallback = null;
+    InAppWebViewFlutterPluginFork.filePathCallbackLegacy = null;
     outputFileUri = null;
 
     return true;
@@ -863,7 +863,7 @@ public class InAppWebViewChromeClient extends WebChromeClient implements PluginR
   }
 
   public void startPhotoPickerIntent(ValueCallback<Uri> filePathCallback, String acceptType) {
-    InAppWebViewFlutterPlugin.filePathCallbackLegacy = filePathCallback;
+    InAppWebViewFlutterPluginFork.filePathCallbackLegacy = filePathCallback;
 
     Intent fileChooserIntent = getFileChooserIntent(acceptType);
     Intent chooserIntent = Intent.createChooser(fileChooserIntent, "");
@@ -887,7 +887,7 @@ public class InAppWebViewChromeClient extends WebChromeClient implements PluginR
 
   @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
   public boolean startPhotoPickerIntent(final ValueCallback<Uri[]> callback, final Intent intent, final String[] acceptTypes, final boolean allowMultiple) {
-    InAppWebViewFlutterPlugin.filePathCallback = callback;
+    InAppWebViewFlutterPluginFork.filePathCallback = callback;
 
     ArrayList<Parcelable> extraIntents = new ArrayList<>();
     if (!needsCameraPermission()) {

@@ -18,7 +18,7 @@ import io.flutter.plugin.platform.PlatformViewRegistry;
 import io.flutter.view.FlutterMain;
 import io.flutter.view.FlutterView;
 
-public class InAppWebViewFlutterPlugin implements FlutterPlugin, ActivityAware {
+public class InAppWebViewFlutterPluginFork implements FlutterPlugin, ActivityAware {
 
   protected static final String LOG_TAG = "InAppWebViewFlutterPL";
 
@@ -32,10 +32,10 @@ public class InAppWebViewFlutterPlugin implements FlutterPlugin, ActivityAware {
   public static ValueCallback<Uri> filePathCallbackLegacy;
   public static ValueCallback<Uri[]> filePathCallback;
 
-  public InAppWebViewFlutterPlugin() {}
+  public InAppWebViewFlutterPluginFork() {}
 
   public static void registerWith(PluginRegistry.Registrar registrar) {
-    final InAppWebViewFlutterPlugin instance = new InAppWebViewFlutterPlugin();
+    final InAppWebViewFlutterPluginFork instance = new InAppWebViewFlutterPluginFork();
     Shared.registrar = registrar;
     instance.onAttachedToEngine(
             registrar.context(), registrar.messenger(), registrar.activity(), registrar.platformViewRegistry(), registrar.view());

@@ -106,7 +106,7 @@ public class InAppBrowserManager: NSObject, FlutterPlugin {
         let webViewOptions = InAppWebViewOptions()
         let _ = webViewOptions.parse(options: options)
         
-        let storyboard = UIStoryboard(name: WEBVIEW_STORYBOARD, bundle: Bundle(for: InAppWebViewFlutterPlugin.self))
+        let storyboard = UIStoryboard(name: WEBVIEW_STORYBOARD, bundle: Bundle(for: InAppWebViewFlutterPluginFork.self))
         let webViewController = storyboard.instantiateViewController(withIdentifier: WEBVIEW_STORYBOARD_CONTROLLER_ID) as! InAppBrowserWebViewController
         webViewController.tmpWindow = tmpWindow
         webViewController.browserOptions = browserOptions
