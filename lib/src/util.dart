@@ -3,7 +3,7 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 
 class Util {
-  static Color convertColorFromStringRepresentation(String colorValue) {
+  static Color? convertColorFromStringRepresentation(String colorValue) {
     if (colorValue.startsWith("#")) {
       return Util.getColorFromHex(colorValue);
     } else if (colorValue.startsWith("rgb(")) {
@@ -376,7 +376,7 @@ class Util {
         .map((rbgValue) => double.parse(rbgValue.trim()))
         .toList();
     var rgbValues = hslToRgb(hlsValues[0], hlsValues[1], hlsValues[2]);
-    return Color.fromRGBO(rgbValues[0], rgbValues[1], rgbValues[2], 1);
+    return Color.fromRGBO(rgbValues[0] as int, rgbValues[1] as int, rgbValues[2] as int, 1);
   }
 
   static Color getColorFromHlsaString(String hlsaString) {
@@ -388,7 +388,7 @@ class Util {
         .toList();
     var rgbaValues = hslToRgb(hlsaValues[0], hlsaValues[1], hlsaValues[2]);
     return Color.fromRGBO(
-        rgbaValues[0], rgbaValues[1], rgbaValues[2], hlsaValues[3]);
+        rgbaValues[0] as int, rgbaValues[1] as int, rgbaValues[2] as int, hlsaValues[3]);
   }
 
   static List<num> hslToRgb(double h, double s, double l) {

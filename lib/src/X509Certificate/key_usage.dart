@@ -1,3 +1,5 @@
+import 'package:collection/collection.dart' show IterableExtension;
+
 class KeyUsage {
   final int _value;
 
@@ -15,14 +17,13 @@ class KeyUsage {
     KeyUsage.decipherOnly,
   ].toSet();
 
-  static KeyUsage fromIndex(int value) {
-    return KeyUsage.values.firstWhere((element) => element.toValue() == value,
-        orElse: () => null);
+  static KeyUsage? fromIndex(int value) {
+    return KeyUsage.values.firstWhereOrNull((element) => element.toValue() == value);
   }
 
   int toValue() => _value;
 
-  String name() => _KeyUsageMapName[this._value];
+  String? name() => _KeyUsageMapName[this._value];
 
   @override
   String toString() => "($_value, ${name()})";

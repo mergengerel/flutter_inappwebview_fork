@@ -1,3 +1,5 @@
+import 'package:collection/collection.dart' show IterableExtension;
+
 class ASN1DistinguishedNames {
   final String _oid;
   final String _representation;
@@ -19,10 +21,10 @@ class ASN1DistinguishedNames {
     ASN1DistinguishedNames.EMAIL,
   ].toSet();
 
-  static ASN1DistinguishedNames fromValue(String oid) {
+  static ASN1DistinguishedNames? fromValue(String oid) {
     if (oid != null)
       return ASN1DistinguishedNames.values
-          .firstWhere((element) => element.oid() == oid, orElse: () => null);
+          .firstWhereOrNull((element) => element.oid() == oid);
     return null;
   }
 

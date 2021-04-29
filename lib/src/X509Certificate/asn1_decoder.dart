@@ -6,12 +6,12 @@ import 'asn1_identifier.dart';
 import 'asn1_object.dart';
 
 class ASN1DERDecoder {
-  static List<ASN1Object> decode({@required List<int> data}) {
+  static List<ASN1Object> decode({required List<int> data}) {
     var iterator = data.iterator;
     return parse(iterator: iterator);
   }
 
-  static List<ASN1Object> parse({@required Iterator<int> iterator}) {
+  static List<ASN1Object> parse({required Iterator<int> iterator}) {
     var result = <ASN1Object>[];
 
     while (iterator.moveNext()) {
@@ -20,7 +20,7 @@ class ASN1DERDecoder {
       var asn1obj = ASN1Object();
       asn1obj.identifier = ASN1Identifier(nextValue);
 
-      if (asn1obj.identifier.isConstructed()) {
+      if (asn1obj.identifier!.isConstructed()) {
         var contentData = loadSubContent(iterator: iterator);
 
         if (contentData.isEmpty) {
@@ -34,18 +34,18 @@ class ASN1DERDecoder {
 
         asn1obj.encoded = Uint8List.fromList(contentData);
 
-        for (var item in asn1obj.sub) {
+        for (var item in asn1obj.sub!) {
           item.parent = asn1obj;
         }
       } else {
-        if (asn1obj.identifier.typeClass() == ASN1IdentifierClass.UNIVERSAL) {
+        if (asn1obj.identifier!.typeClass() == ASN1IdentifierClass.UNIVERSAL) {
           var contentData = loadSubContent(iterator: iterator);
 
           asn1obj.encoded = Uint8List.fromList(contentData);
 
           // decode the content data with come more convenient format
 
-          var tagNumber = asn1obj.identifier.tagNumber();
+          var tagNumber = asn1obj.identifier!.tagNumber();
 
           if (tagNumber == ASN1IdentifierTagNumber.END_OF_CONTENT) {
             return result;
@@ -130,7 +130,7 @@ class ASN1DERDecoder {
     return result;
   }
 
-  static BigInt getContentLength({@required Iterator<int> iterator}) {
+  static BigInt getContentLength({required Iterator<int> iterator}) {
     if (iterator.moveNext()) {
       var first = iterator.current;
       if (first != null) {
@@ -158,7 +158,7 @@ class ASN1DERDecoder {
     return BigInt.from(0);
   }
 
-  static List<int> loadSubContent({@required Iterator<int> iterator}) {
+  static List<int> loadSubContent({required Iterator<int> iterator}) {
     var len = getContentLength(iterator: iterator);
     int int64MaxValue = double.maxFinite.toInt();
 
@@ -183,7 +183,7 @@ class ASN1DERDecoder {
   }
 
   /// Decode DER OID bytes to String with dot notation
-  static String decodeOid({@required List<int> contentData}) {
+  static String decodeOid({required List<int> contentData}) {
     if (contentData.isEmpty) {
       return "";
     }
@@ -211,7 +211,7 @@ class ASN1DERDecoder {
   ///dates past 2049. Parsing that structure hasn't been implemented yet.
   ///
   ///[contentData] the UTCTime value to convert.
-  static DateTime utcTimeToDate({@required List<int> contentData}) {
+  static DateTime? utcTimeToDate({required List<int> contentData}) {
     /* The following formats can be used:
       YYMMDDhhmmZ
       YYMMDDhhmm+hh'mm'
@@ -231,7 +231,7 @@ class ASN1DERDecoder {
       hh' is the absolute value of the offset from GMT in hours
       mm' is the absolute value of the offset from GMT in minutes */
 
-    String utc;
+    String? utc;
     try {
       utc = utf8.decode(contentData);
     } catch (e) {}
@@ -250,7 +250,7 @@ class ASN1DERDecoder {
     var mm = int.parse(utc.substring(8, 10), radix: 10);
     var ss = 0;
 
-    int end;
+    int? end;
     String c;
     // not just YYMMDDhhmmZ
     if (utc.length > 11) {
@@ -298,7 +298,7 @@ class ASN1DERDecoder {
   ///Converts a GeneralizedTime value to a date.
   ///
   ///[contentData] the GeneralizedTime value to convert.
-  static DateTime generalizedTimeToDate({@required List<int> contentData}) {
+  static DateTime? generalizedTimeToDate({required List<int> contentData}) {
     /* The following formats can be used:
       YYYYMMDDHHMMSS
       YYYYMMDDHHMMSS.fff
@@ -321,7 +321,7 @@ class ASN1DERDecoder {
       hh' is the absolute value of the offset from GMT in hours
       mm' is the absolute value of the offset from GMT in minutes */
 
-    String gentime;
+    String? gentime;
     try {
       gentime = utf8.decode(contentData);
     } catch (e) {}
@@ -385,7 +385,7 @@ class ASN1DERDecoder {
   }
 }
 
-BigInt toIntValue(List<int> data) {
+BigInt? toIntValue(List<int> data) {
   if (data.length > 8) {
     return null;
   }

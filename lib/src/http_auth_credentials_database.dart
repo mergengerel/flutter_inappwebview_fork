@@ -11,16 +11,16 @@ import 'package:flutter/services.dart';
 ///[WebViewDatabase](https://developer.android.com/reference/android/webkit/WebViewDatabase)
 ///doesn't offer the same functionalities as iOS `URLCredentialStorage`.
 class HttpAuthCredentialDatabase {
-  static HttpAuthCredentialDatabase _instance;
+  static HttpAuthCredentialDatabase? _instance;
   static const MethodChannel _channel = const MethodChannel(
       'com.pichillilorenzo/flutter_inappwebview_fork_credential_database');
 
   ///Gets the database shared instance.
-  static HttpAuthCredentialDatabase instance() {
+  static HttpAuthCredentialDatabase? instance() {
     return (_instance != null) ? _instance : _init();
   }
 
-  static HttpAuthCredentialDatabase _init() {
+  static HttpAuthCredentialDatabase? _init() {
     _channel.setMethodCallHandler(_handleMethod);
     _instance = HttpAuthCredentialDatabase();
     return _instance;
@@ -35,11 +35,11 @@ class HttpAuthCredentialDatabase {
       getAllAuthCredentials() async {
     Map<String, dynamic> args = <String, dynamic>{};
     List<dynamic> allCredentials =
-        await _channel.invokeMethod('getAllAuthCredentials', args);
+        await (_channel.invokeMethod('getAllAuthCredentials', args) as FutureOr<List<dynamic>>);
 
     List<ProtectionSpaceHttpAuthCredentials> result = [];
 
-    for (Map<dynamic, dynamic> map in allCredentials) {
+    for (Map<dynamic, dynamic> map in allCredentials as Iterable<Map<dynamic, dynamic>>) {
       Map<dynamic, dynamic> protectionSpace = map["protectionSpace"];
       List<dynamic> credentials = map["credentials"];
       result.add(ProtectionSpaceHttpAuthCredentials(
@@ -59,16 +59,16 @@ class HttpAuthCredentialDatabase {
 
   ///Gets all the HTTP auth credentials saved for that [protectionSpace].
   Future<List<HttpAuthCredential>> getHttpAuthCredentials(
-      {@required ProtectionSpace protectionSpace}) async {
+      {required ProtectionSpace protectionSpace}) async {
     Map<String, dynamic> args = <String, dynamic>{};
     args.putIfAbsent("host", () => protectionSpace.host);
     args.putIfAbsent("protocol", () => protectionSpace.protocol);
     args.putIfAbsent("realm", () => protectionSpace.realm);
     args.putIfAbsent("port", () => protectionSpace.port);
     List<dynamic> credentialList =
-        await _channel.invokeMethod('getHttpAuthCredentials', args);
+        await (_channel.invokeMethod('getHttpAuthCredentials', args) as FutureOr<List<dynamic>>);
     List<HttpAuthCredential> credentials = [];
-    for (Map<dynamic, dynamic> credential in credentialList) {
+    for (Map<dynamic, dynamic> credential in credentialList as Iterable<Map<dynamic, dynamic>>) {
       credentials.add(HttpAuthCredential(
           username: credential["username"], password: credential["password"]));
     }
@@ -77,8 +77,8 @@ class HttpAuthCredentialDatabase {
 
   ///Saves an HTTP auth [credential] for that [protectionSpace].
   Future<void> setHttpAuthCredential(
-      {@required ProtectionSpace protectionSpace,
-      @required HttpAuthCredential credential}) async {
+      {required ProtectionSpace protectionSpace,
+      required HttpAuthCredential credential}) async {
     Map<String, dynamic> args = <String, dynamic>{};
     args.putIfAbsent("host", () => protectionSpace.host);
     args.putIfAbsent("protocol", () => protectionSpace.protocol);
@@ -91,8 +91,8 @@ class HttpAuthCredentialDatabase {
 
   ///Removes an HTTP auth [credential] for that [protectionSpace].
   Future<void> removeHttpAuthCredential(
-      {@required ProtectionSpace protectionSpace,
-      @required HttpAuthCredential credential}) async {
+      {required ProtectionSpace protectionSpace,
+      required HttpAuthCredential credential}) async {
     Map<String, dynamic> args = <String, dynamic>{};
     args.putIfAbsent("host", () => protectionSpace.host);
     args.putIfAbsent("protocol", () => protectionSpace.protocol);
@@ -105,7 +105,7 @@ class HttpAuthCredentialDatabase {
 
   ///Removes all the HTTP auth credentials saved for that [protectionSpace].
   Future<void> removeHttpAuthCredentials(
-      {@required ProtectionSpace protectionSpace}) async {
+      {required ProtectionSpace protectionSpace}) async {
     Map<String, dynamic> args = <String, dynamic>{};
     args.putIfAbsent("host", () => protectionSpace.host);
     args.putIfAbsent("protocol", () => protectionSpace.protocol);

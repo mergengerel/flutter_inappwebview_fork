@@ -1,3 +1,5 @@
+import 'package:collection/collection.dart' show IterableExtension;
+
 class OID {
   final String _value;
 
@@ -102,14 +104,13 @@ class OID {
     OID.timeStamping,
   ].toSet();
 
-  static OID fromValue(String value) {
-    return OID.values.firstWhere((element) => element.toValue() == value,
-        orElse: () => null);
+  static OID? fromValue(String? value) {
+    return OID.values.firstWhereOrNull((element) => element.toValue() == value);
   }
 
   String toValue() => _value;
 
-  String name() => _oidMapName[this._value];
+  String? name() => _oidMapName[this._value];
 
   @override
   String toString() => "($_value, ${name()})";

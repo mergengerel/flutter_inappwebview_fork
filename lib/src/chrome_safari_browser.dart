@@ -12,11 +12,11 @@ import 'in_app_browser.dart';
 ///
 ///[browserFallback] represents the [InAppBrowser] instance fallback in case `Chrome Custom Tabs`/`SFSafariViewController` is not available.
 class ChromeSafariBrowser {
-  String uuid;
-  InAppBrowser browserFallback;
+  String? uuid;
+  InAppBrowser? browserFallback;
   Map<int, ChromeSafariBrowserMenuItem> _menuItems = new HashMap();
   bool _isOpened = false;
-  MethodChannel _channel;
+  late MethodChannel _channel;
   static const MethodChannel _sharedChannel =
       const MethodChannel('com.pichillilorenzo/flutter_chromesafaribrowser');
 
@@ -43,10 +43,10 @@ class ChromeSafariBrowser {
         this._isOpened = false;
         break;
       case "onChromeSafariBrowserMenuItemActionPerform":
-        String url = call.arguments["url"];
-        String title = call.arguments["title"];
-        int id = call.arguments["id"].toInt();
-        this._menuItems[id].action(url, title);
+        String? url = call.arguments["url"];
+        String? title = call.arguments["title"];
+        int? id = call.arguments["id"].toInt();
+        this._menuItems[id!]!.action(url, title);
         break;
       default:
         throw UnimplementedError("Unimplemented ${call.method} method");
@@ -65,14 +65,14 @@ class ChromeSafariBrowser {
   ///
   ///[contextMenuFallback]: Context Menu used by the [InAppBrowser] instance fallback.
   Future<void> open(
-      {@required String url,
-      ChromeSafariBrowserClassOptions options,
+      {required String url,
+      ChromeSafariBrowserClassOptions? options,
       Map<String, String> headersFallback = const {},
-      InAppBrowserClassOptions optionsFallback}) async {
+      InAppBrowserClassOptions? optionsFallback}) async {
     assert(url != null && url.isNotEmpty);
     this.throwIsAlreadyOpened(message: 'Cannot open $url!');
 
-    List<Map<String, dynamic>> menuItemList = new List();
+    List<Map<String, dynamic>> menuItemList = [];
     _menuItems.forEach((key, value) {
       menuItemList.add({"id": value.id, "label": value.label});
     });
@@ -112,7 +112,7 @@ class ChromeSafariBrowser {
   ///On Android, returns `true` if Chrome Custom Tabs is available.
   ///On iOS, returns `true` if SFSafariViewController is available.
   ///Otherwise returns `false`.
-  static Future<bool> isAvailable() async {
+  static Future<bool?> isAvailable() async {
     Map<String, dynamic> args = <String, dynamic>{};
     return await _sharedChannel.invokeMethod("isAvailable", args);
   }
@@ -157,10 +157,10 @@ class ChromeSafariBrowserMenuItem {
   String label;
 
   ///Callback function to be invoked when the menu item is clicked
-  final void Function(String url, String title) action;
+  final void Function(String? url, String? title) action;
 
   ChromeSafariBrowserMenuItem(
-      {@required this.id, @required this.label, @required this.action});
+      {required this.id, required this.label, required this.action});
 
   Map<String, dynamic> toMap() {
     return {"id": id, "label": label};

@@ -11,16 +11,16 @@ import 'types.dart';
 ///
 ///**NOTE for iOS**: available from iOS 11.0+.
 class CookieManager {
-  static CookieManager _instance;
+  static CookieManager? _instance;
   static const MethodChannel _channel = const MethodChannel(
       'com.pichillilorenzo/flutter_inappwebview_fork_cookiemanager');
 
   ///Gets the cookie manager shared instance.
-  static CookieManager instance() {
+  static CookieManager? instance() {
     return (_instance != null) ? _instance : _init();
   }
 
-  static CookieManager _init() {
+  static CookieManager? _init() {
     _channel.setMethodCallHandler(_handleMethod);
     _instance = CookieManager();
     return _instance;
@@ -33,16 +33,16 @@ class CookieManager {
   ///The default value of [path] is `"/"`.
   ///If [domain] is `null`, its default value will be the domain name of [url].
   Future<void> setCookie(
-      {@required String url,
-      @required String name,
-      @required String value,
-      String domain,
+      {required String url,
+      required String name,
+      required String value,
+      String? domain,
       String path = "/",
-      int expiresDate,
-      int maxAge,
-      bool isSecure,
-      bool isHttpOnly,
-      HTTPCookieSameSitePolicy sameSite}) async {
+      int? expiresDate,
+      int? maxAge,
+      bool? isSecure,
+      bool? isHttpOnly,
+      HTTPCookieSameSitePolicy? sameSite}) async {
     if (domain == null) domain = _getDomainName(url);
 
     assert(url != null && url.isNotEmpty);
@@ -67,13 +67,13 @@ class CookieManager {
   }
 
   ///Gets all the cookies for the given [url].
-  Future<List<Cookie>> getCookies({@required String url}) async {
+  Future<List<Cookie>> getCookies({required String url}) async {
     assert(url != null && url.isNotEmpty);
 
     Map<String, dynamic> args = <String, dynamic>{};
     args.putIfAbsent('url', () => url);
     List<dynamic> cookieListMap =
-        await _channel.invokeMethod('getCookies', args);
+        await (_channel.invokeMethod('getCookies', args) as FutureOr<List<dynamic>>);
     cookieListMap = cookieListMap.cast<Map<dynamic, dynamic>>();
 
     List<Cookie> cookies = [];
@@ -94,15 +94,15 @@ class CookieManager {
   }
 
   ///Gets a cookie by its [name] for the given [url].
-  Future<Cookie> getCookie(
-      {@required String url, @required String name}) async {
+  Future<Cookie?> getCookie(
+      {required String url, required String name}) async {
     assert(url != null && url.isNotEmpty);
     assert(name != null && name.isNotEmpty);
 
     Map<String, dynamic> args = <String, dynamic>{};
     args.putIfAbsent('url', () => url);
-    List<dynamic> cookies = await _channel.invokeMethod('getCookies', args);
-    cookies = cookies.cast<Map<dynamic, dynamic>>();
+    List<dynamic> cookies = await (_channel.invokeMethod('getCookies', args) as FutureOr<List<dynamic>>);
+    cookies = cookies.cast<Map<dynamic, dynamic>?>();
     for (var i = 0; i < cookies.length; i++) {
       cookies[i] = cookies[i].cast<String, dynamic>();
       if (cookies[i]["name"] == name)
@@ -126,8 +126,8 @@ class CookieManager {
   ///The default value of [path] is `"/"`.
   ///If [domain] is `null` or empty, its default value will be the domain name of [url].
   Future<void> deleteCookie(
-      {@required String url,
-      @required String name,
+      {required String url,
+      required String name,
       String domain = "",
       String path = "/"}) async {
     if (domain == null || domain.isEmpty) domain = _getDomainName(url);
@@ -150,7 +150,7 @@ class CookieManager {
   ///The default value of [path] is `"/"`.
   ///If [domain] is `null` or empty, its default value will be the domain name of [url].
   Future<void> deleteCookies(
-      {@required String url, String domain = "", String path = "/"}) async {
+      {required String url, String domain = "", String path = "/"}) async {
     if (domain == null || domain.isEmpty) domain = _getDomainName(url);
 
     assert(url != null && url.isNotEmpty);

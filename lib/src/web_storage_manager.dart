@@ -11,7 +11,7 @@ import 'types.dart';
 ///
 ///**NOTE for iOS**: available from iOS 9.0+.
 class WebStorageManager {
-  static WebStorageManager _instance;
+  static WebStorageManager? _instance;
   static const MethodChannel _channel = const MethodChannel(
       'com.pichillilorenzo/flutter_inappwebview_fork_webstoragemanager');
 
@@ -19,11 +19,11 @@ class WebStorageManager {
   IOSWebStorageManager ios = IOSWebStorageManager();
 
   ///Gets the WebStorage manager shared instance.
-  static WebStorageManager instance() {
+  static WebStorageManager? instance() {
     return (_instance != null) ? _instance : _init();
   }
 
-  static WebStorageManager _init() {
+  static WebStorageManager? _init() {
     _channel.setMethodCallHandler(_handleMethod);
     _instance = new WebStorageManager();
     return _instance;
@@ -63,7 +63,7 @@ class AndroidWebStorageManager {
 
   ///Clears the storage currently being used by both the Application Cache and Web SQL Database APIs by the given [origin].
   ///The origin is specified using its string representation.
-  Future<void> deleteOrigin({@required String origin}) async {
+  Future<void> deleteOrigin({required String origin}) async {
     assert(origin != null);
     Map<String, dynamic> args = <String, dynamic>{};
     args.putIfAbsent("origin", () => origin);
@@ -73,7 +73,7 @@ class AndroidWebStorageManager {
   ///Gets the storage quota for the Web SQL Database API for the given [origin].
   ///The quota is given in bytes and the origin is specified using its string representation.
   ///Note that a quota is not enforced on a per-origin basis for the Application Cache API.
-  Future<int> getQuotaForOrigin({@required String origin}) async {
+  Future<int?> getQuotaForOrigin({required String origin}) async {
     assert(origin != null);
     Map<String, dynamic> args = <String, dynamic>{};
     args.putIfAbsent("origin", () => origin);
@@ -83,7 +83,7 @@ class AndroidWebStorageManager {
 
   ///Gets the amount of storage currently being used by both the Application Cache and Web SQL Database APIs by the given [origin].
   ///The amount is given in bytes and the origin is specified using its string representation.
-  Future<int> getUsageForOrigin({@required String origin}) async {
+  Future<int?> getUsageForOrigin({required String origin}) async {
     assert(origin != null);
     Map<String, dynamic> args = <String, dynamic>{};
     args.putIfAbsent("origin", () => origin);
@@ -101,7 +101,7 @@ class IOSWebStorageManager {
   ///
   ///[dataTypes] represents the website data types to fetch records for.
   Future<List<IOSWKWebsiteDataRecord>> fetchDataRecords(
-      {@required Set<IOSWKWebsiteDataType> dataTypes}) async {
+      {required Set<IOSWKWebsiteDataType> dataTypes}) async {
     assert(dataTypes != null);
     List<IOSWKWebsiteDataRecord> recordList = [];
     List<String> dataTypesList = [];
@@ -115,7 +115,7 @@ class IOSWebStorageManager {
         .cast<Map<dynamic, dynamic>>();
     for (var record in records) {
       List<String> dataTypesString = record["dataTypes"].cast<String>();
-      Set<IOSWKWebsiteDataType> dataTypes = Set();
+      Set<IOSWKWebsiteDataType?> dataTypes = Set();
       for (var dataType in dataTypesString) {
         dataTypes.add(IOSWKWebsiteDataType.fromValue(dataType));
       }
@@ -131,8 +131,8 @@ class IOSWebStorageManager {
   ///
   ///[dataRecords] represents the website data records to delete website data for.
   Future<void> removeDataFor(
-      {@required Set<IOSWKWebsiteDataType> dataTypes,
-      @required List<IOSWKWebsiteDataRecord> dataRecords}) async {
+      {required Set<IOSWKWebsiteDataType> dataTypes,
+      required List<IOSWKWebsiteDataRecord> dataRecords}) async {
     assert(dataTypes != null && dataRecords != null);
 
     List<String> dataTypesList = [];
@@ -157,8 +157,8 @@ class IOSWebStorageManager {
   ///
   ///[date] represents a date. All website data modified after this date will be removed.
   Future<void> removeDataModifiedSince(
-      {@required Set<IOSWKWebsiteDataType> dataTypes,
-      @required DateTime date}) async {
+      {required Set<IOSWKWebsiteDataType> dataTypes,
+      required DateTime date}) async {
     assert(dataTypes != null && date != null);
 
     List<String> dataTypesList = [];

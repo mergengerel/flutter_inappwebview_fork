@@ -23,8 +23,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7daaf92e-b4cd-4b39-a5a4-ede36db86c4f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/pichillilorenzo/flutter_inappwebview_fork/InAppWebView/InAppWebViewChromeClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/pichillilorenzo/flutter_inappwebview_fork/InAppWebView/InAppWebViewChromeClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Flutter/flutter_export_environment.sh" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Flutter/flutter_export_environment.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/X509Certificate/asn1_decoder.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/X509Certificate/asn1_decoder.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/X509Certificate/asn1_distinguished_names.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/X509Certificate/asn1_distinguished_names.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/X509Certificate/asn1_identifier.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/X509Certificate/asn1_identifier.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/X509Certificate/asn1_object.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/X509Certificate/asn1_object.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/X509Certificate/key_usage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/X509Certificate/key_usage.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/X509Certificate/oid.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/X509Certificate/oid.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/X509Certificate/x509_certificate.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/X509Certificate/x509_certificate.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/X509Certificate/x509_extension.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/X509Certificate/x509_extension.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/X509Certificate/x509_public_key.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/X509Certificate/x509_public_key.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/chrome_safari_browser.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/chrome_safari_browser.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/content_blocker.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/content_blocker.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/context_menu.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/context_menu.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/cookie_manager.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/cookie_manager.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/headless_in_app_webview.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/headless_in_app_webview.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/http_auth_credentials_database.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/http_auth_credentials_database.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/in_app_browser.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/in_app_browser.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/in_app_localhost_server.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/in_app_localhost_server.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/in_app_webview.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/in_app_webview.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/in_app_webview_controller.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/in_app_webview_controller.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/types.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/types.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/util.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/util.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/web_storage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/web_storage.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/web_storage_manager.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/web_storage_manager.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/webview.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/webview.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/webview_options.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/webview_options.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,6 +69,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -54,7 +82,10 @@
       <method v="2" />
     </configuration>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="7daaf92e-b4cd-4b39-a5a4-ede36db86c4f" name="Default Changelist" comment="" />
@@ -78,9 +109,14 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="422" y="189" width="765" height="522" key="find.popup" timestamp="1617245556597">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="422" y="194" width="810" height="490" key="find.popup" timestamp="1619677415496">
+      <screen x="0" y="25" width="1440" height="805" />
     </state>
     <state x="422" y="189" width="765" height="522" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1617245556597" />
+    <state x="422" y="194" width="810" height="490" key="find.popup/0.25.1440.805@0.25.1440.805" timestamp="1619677415496" />
+    <state x="405" y="154" width="670" height="676" key="search.everywhere.popup" timestamp="1619676832220">
+      <screen x="0" y="25" width="1440" height="805" />
+    </state>
+    <state x="405" y="154" width="670" height="676" key="search.everywhere.popup/0.25.1440.805@0.25.1440.805" timestamp="1619676832220" />
   </component>
 </project>

@@ -1,3 +1,5 @@
+import 'package:collection/collection.dart' show IterableExtension;
+
 class ASN1IdentifierClass {
   final int _value;
 
@@ -10,11 +12,10 @@ class ASN1IdentifierClass {
     ASN1IdentifierClass.PRIVATE,
   ].toSet();
 
-  static ASN1IdentifierClass fromValue(int value) {
+  static ASN1IdentifierClass? fromValue(int value) {
     if (value != null)
-      return ASN1IdentifierClass.values.firstWhere(
-          (element) => element.toValue() == value,
-          orElse: () => null);
+      return ASN1IdentifierClass.values.firstWhereOrNull(
+          (element) => element.toValue() == value);
     return null;
   }
 
@@ -83,11 +84,10 @@ class ASN1IdentifierTagNumber {
     ASN1IdentifierTagNumber.BMP_STRING,
   ].toSet();
 
-  static ASN1IdentifierTagNumber fromValue(int value) {
+  static ASN1IdentifierTagNumber? fromValue(int value) {
     if (value != null)
-      return ASN1IdentifierTagNumber.values.firstWhere(
-          (element) => element.toValue() == value,
-          orElse: () => null);
+      return ASN1IdentifierTagNumber.values.firstWhereOrNull(
+          (element) => element.toValue() == value);
     return null;
   }
 
